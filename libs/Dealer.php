@@ -3,16 +3,16 @@ namespace poker\libs;
 
 class Dealer
 {
-	private $dick;
+	private $deck;
 
-	public function __construct(CardDick $dick)
+	public function __construct(CardDeck $deck)
 	{
-		$this->dick = $dick;
+		$this->deck = $deck;
 	}
 
 	public function hand()
 	{
-		$cards = $this->dick->getCards();
+		$cards = $this->deck->getCards();
 		shuffle($cards);
 		// return 5 cards
 		return array_slice($cards,0,5);

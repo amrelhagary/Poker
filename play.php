@@ -9,8 +9,8 @@ spl_autoload_register(function ($class_name) {
 
 use poker\libs\PokerGame;
 $poker = new PokerGame();
-$dick = $poker->init();
-$dealer = new \poker\libs\Dealer($dick);
+$deck = $poker->init();
+$dealer = new \poker\libs\Dealer($deck);
 $player = new \poker\libs\Player($dealer);
 $i = 0;
 $win = false;
@@ -26,8 +26,8 @@ while($i < 1000)
 }
 
 if($win){
-    echo "Win \n";
+    echo "Win after ($i) \n";
     \poker\libs\Card::printCard($player->getWinCards());
 }else{
-    echo "Loose \n";
+    echo "Loose after ($i) \n";
 }

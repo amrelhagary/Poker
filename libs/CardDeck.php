@@ -4,7 +4,7 @@ use poker\libs\Card;
 use poker\libs\Suit;
 
 
-class CardDick
+class CardDeck
 {
 
 

@@ -19,7 +19,7 @@ class PokerGame
         $suit[2] = new Suit(new CardColor(CardColor::$BLACK),new CardShape(CardShape::$CLUBS));
         $suit[3] = new Suit(new CardColor(CardColor::$RED),new CardShape(CardShape::$DIAMONDS));
 
-        return new CardDick($suit);
+        return new CardDeck($suit);
 
     }
 }
